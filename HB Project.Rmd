@@ -1,0 +1,48 @@
+---
+title: "text_mining"
+author: "J. Hernández"
+date: "5/29/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+The database comes from Scopus and Web of Science, where criteria for document selection follow the below rules:
+
+* Insect* or (Honey bee* or Honeybee*) the asterisk is due to word-stem search. 
+
+* Biological topics: 
+
+  * Ecology
+  
+  * Physiology
+  
+  * Psychology
+  
+* Biological subtopics: 
+
+  * Behavior
+  
+  * Learning
+  
+  * Memory
+  
+  * Classical conditioning
+  
+  * Pavlovian
+
+
+The raw data collected is shown bellow.  
+
+But we only will use five variables: 
+
+* Authors (Au)
+
+* Title (Ti)
+ 
+* Abstract (Abs)
+
+* Author Keywords (AK)
+
+as shows bellow; honey bee ecology and behavior
